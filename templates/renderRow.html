@@ -1,0 +1,25 @@
+{% if patternList %}
+    <div id="renderTable">
+    {% for pattern in patternList %}
+        <div id="{{pattern.id}}" class="renderRow renderRow_normal ui-corner-all">
+            <div class="nameCol">{{pattern.name}}</div>
+            <div class="userCol"><strong>Creator: </strong>{{pattern.owner}}</div>
+            <div class="countCol"><strong>Squares: </strong>{{pattern.size}}</div>
+        </div>
+    {% endfor %}
+    </div>
+    <div id="renderNav">
+        <div id="leftNav">
+            <button id="leftArrow">Left</button>
+        </div>
+        <div id="filter">
+            <!-- <input type="checkbox" id="mineOnly" />&nbsp; My Designs Only -->
+            <span id="currPage">{{currentPage}}</span> of <span id="totalPageCount">{{totalPages}}</span>
+        </div>
+        <div id="rightNav">
+            <button id="rightArrow">Right</button>
+        </div>
+    </div>
+{% else %}
+    <p align="center">No designs currently exist. Get to work!</p>
+{% endif %}

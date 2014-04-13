@@ -1,0 +1,138 @@
+body
+{
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Helvetica';
+}
+.sqrWhite
+{
+    border-bottom: 1px dotted gray;
+    border-right: 1px dotted gray;
+    background: white;
+    color: lightgray;
+}
+.sqrWhiteTransition
+{
+    border-bottom: 1px dotted lightgray;
+    border-right: 1px dotted lightgray;
+    background: black;
+    color: white;
+}
+.sqrBlack
+{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background: black;
+    color: lightgray;
+}
+.sqrEmpty
+{
+    border: 0px;
+    background: white;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+.sqr0
+{
+    text-align: center;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sqr1
+{
+    text-align: center;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sqrBox
+{
+    text-align: center;
+    float: left;
+    margin: -1px 0px 0px -1px;
+    padding: 0px 0px 0px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#mainFrame
+{
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: -50px;
+    margin-top: -50px;
+    padding: 0px 0px 0px 0px;
+    height: 100px;
+    width: 100px;
+}
+#headMenu
+{
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    height: 66px;
+}
+#mainMenuBg
+{
+    border-bottom: 2px solid #000000;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 64px;
+}
+#mainMenu
+{
+    border-bottom: 2px solid #000000;
+    color: #FFFFFF;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 64px;
+}
+a:link, a:visited, a:hover, a:active
+{
+    color: #FFFFFF;
+}
+#menuPositioner
+{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+#titleText
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 64px;
+    float: left;
+}
+#menuOptions
+{
+    height: 64px;
+    float: left;
+    padding-left: 20px;
+    padding-top: 21px;
+    font-size: 13px;
+}
+.linkfloat
+{
+    float: left;
+    padding-left: 50px;
+}
+.ui-dialog-titlebar
+{
+    font-size: 13px!important;
+}
+.ui-dialog-content
+{
+    font-size: 12px!important;
+}

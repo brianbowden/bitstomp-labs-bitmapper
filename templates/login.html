@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-Transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+    <head> 
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+        <meta http-equiv="Content-language" content="en" /> 
+        <title>BitStomp Labs</title>
+        
+		<link type="text/css" href="{{mediaPath}}css/dark/jquery-ui-1.8.11.custom.css" rel="stylesheet" />
+		<link type="text/css" href="{{mediaPath}}css/main.css" rel="stylesheet" />	
+		<link type="text/css" href="{{mediaPath}}css/login.css" rel="stylesheet" />	
+		<script type="text/javascript" src="{{mediaPath}}js/dark/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="{{mediaPath}}js/dark/jquery-ui-1.8.11.custom.min.js"></script>
+        <script type=text/javascript src="{{mediaPath}}js/main.js"></script>
+        <script type=text/javascript src="{{mediaPath}}js/login.js"></script>
+    </head>
+    <body>
+        <div id="errorDialog" class="ui-state-error ui-corner-all">
+            <span class="ui-icon ui-icon-alert errorComponent"></span>
+            <span class="errorComponent"> <strong>There was a problem!</strong> </span>
+            <div id="errorDialogText"></div>
+        </div>
+        <div id="headMenu" class="headMenu">
+            <div id="mainMenuBg" class="headMenu">
+                <!-- transparent background -->
+            </div>
+            <div id="mainMenu" class="headMenu">
+                <div id="menuPositioner">
+                    <form action="" method="POST">
+                        <div id="titleText">
+                            {% csrf_token %}
+                            <div>
+                                <img src="{{mediaPath}}head.png" border="0">
+                            </div>
+                            <div>
+                                Labs
+                            </div>
+                            <div id="projectText">
+                                Project: <strong>BitMapper</strong>
+                            </div>
+                        </div>
+                        <div id="loginOptions">
+                            <div id="username_tile" class="menuTile">
+                                <div>
+                                    Username
+                                </div>
+                                <div>
+                                    <input type="text" name="username" maxlength="30" id="username_in">
+                                </div>
+                            </div>
+                            <div id="password_tile" class="menuTile">
+                                <div>
+                                    Password
+                                </div>
+                                <div>
+                                    <input type="password" name="password" maxlength="50" id="password_in">
+                                </div>
+                            </div>
+                            <div id="confirm_tile" class="menuTile signupOnly">
+                                <div>
+                                    Confirm Password
+                                </div>
+                                <div>
+                                    <input type="password" name="confirm" maxlength="50" id="confirm_in">
+                                </div>
+                            </div>
+                            <div id="login_tile" class="menuTile">
+                                <button id="loginButton" class="logonButton">Log In</button>
+                            </div>
+                            <div id="newUser">
+                                <a href="javascript:toggleSignUp();" id="newUserLink">I'm new here</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- jQuery divs -->
+            <div id="mainDialog"></div>
+            <div id="serverError">{{serverError}}</div>
+        </div>
+        <div id="mainFrame">
+            
+        </div>
+    </body>
+</html>
