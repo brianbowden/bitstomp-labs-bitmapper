@@ -5,6 +5,8 @@ Bitstomp Labs: Bitmapper
 
 This is an old (circa 2010) JavaScript project I built as a demo for a job interview. The original server instance is long gone, but I thought I'd throw the code on GitHub for posterity's sake.
 
+**<a href="https://www.youtube.com/watch?v=4uho6xRoenE">Video of Bitmapper in Action</a>**
+
 From the site's "About" section:
 
 
