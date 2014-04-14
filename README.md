@@ -1,6 +1,8 @@
 Bitstomp Labs: Bitmapper
 =======================
 
+<img src="https://i.cloudup.com/VBrIQWC50e-3000x3000.png" border="1" alt="Screenshot">
+
 This is an old (circa 2010) JavaScript project I built as a demo for a job interview. The original server instance is long gone, but I thought I'd throw the code on GitHub for posterity's sake.
 
 From the site's "About" section:
