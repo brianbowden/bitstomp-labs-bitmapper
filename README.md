@@ -80,5 +80,5 @@ As a small sidenote, it is worth pointing out that this project is still a work 
 - VMWare Player (Development Box)
 - Fedora 14 (Production Server)
 - Apache 2.2
-Lighttpd 1.4 (static file server)
-Rackspace Cloud Hosting
+- Lighttpd 1.4 (static file server)
+- Rackspace Cloud Hosting
